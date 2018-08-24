@@ -1,0 +1,143 @@
+ .container{
+    padding-top: 0;
+  }
+  .slide{
+    width: 100%;
+  }
+  swiper{
+     height: 200px; 
+  }
+  .slide .img {
+    width: 100%!important;
+     height: 100%!important; 
+  }
+  .board {
+    box-sizing: border-box;
+    background-color: #f8f9fb;
+  }
+.entryMenu{
+  width: 100%!important;
+}
+  .board-item {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    font-size: 20rpx;
+    margin: 40rpx 0;
+    padding: 20rpx;
+    background-color: #fff;
+  }
+
+  .board-item .title {
+    display: flex;
+    margin-bottom: 10rpx;
+    width: 100%;
+  }
+
+  .board-item .title text {
+    flex: 1;
+    font-size: 14px;
+    color: #666;
+  }
+
+  .board-item .title image {
+    height: 20rpx;
+    width: 20rpx;
+  }
+
+  .board-item .content {
+    height: 300rpx;
+  }
+
+  .board-item .content .inner {
+    display: flex;
+    flex-direction: row;
+    height: 300rpx;
+    width: 900rpx;
+  }
+
+  .board-item .content .inner .entryMenus-item {
+    display: flex;
+    flex-direction: column;
+    width: 180rpx;
+    margin: 10rpx;
+  }
+
+  .board-item .content .inner .entryMenus-item image {
+    width: 180rpx;
+    height: 250rpx;
+  }
+
+  .board-item .content .inner .entryMenus-item text {
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .entryMenu .content .inner .entryMenus-item image{
+    width: 100%!important;
+  }
+  .entryMenu .content .inner .entryMenus-item{
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    margin: 10rpx;
+  }
+  /*introduce*/
+  .introduce{
+    padding: 0 20px;
+    
+  }
+   .introduce .title,.introduce .body-title{
+    text-align: center;
+  }
+  .introduce text{
+      font-size: 12px;
+    text-align: left!important;
+   
+  }
+  .introduce .body-title{
+      font-size: 20px;
+      margin-top: 20rpx;
+  }
+    .introduce .title{
+     margin: 30rpx 0;
+     font-size: 20px;
+  }
+  .introduce image{
+       width: 100%!important;
+    
+  }
+  .sectionHeader {
+    height:60rpx;
+    margin-top: 90rpx;
+    border-top: 1px dotted #d9d9d9;
+    position: relative;
+      text-align: center;
+}
+.sectionHeader  .title{
+   background: #fff;
+   display: inline-block;
+   position: relative;
+   top: -100%;
+   padding: 0 40rpx;
+}
+.innerCon{
+  /* color: #666; */
+  margin-top: 40rpx;
+}
+.innerCon .innerh3{
+  font-size: 18px;
+  font-weight: 500;
+  color: #666;
+}
+.innerCon .innerh4{
+  font-size: 14px;
+   color: #666;
+}
+.innerCon .readmore{
+  text-align: right;
+  font-size: 12px;
+  line-height: 40rpx;
+  color:#333
+}

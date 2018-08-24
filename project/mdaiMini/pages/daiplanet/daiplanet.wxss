@@ -1,0 +1,141 @@
+.planteImg {
+  width: 750rpx!important;
+}
+.clear{
+  clear: both;
+}
+.daiIntroduce .planet2 {
+  position: absolute;
+  left:100rpx;
+  top:90rpx;
+   width: 60%; 
+}
+.daiIntroduce .astronaut {
+  position: absolute;
+  top: 10rem;
+  right: 0rem;
+  width: 30%;
+  transform: rotate(-25deg);
+}
+/** 上传评论 comment **/
+.comment {
+  box-sizing: border-box;
+  background: #fff;
+  padding: 20rpx;
+}
+.comment .commentContainter {
+  box-sizing: border-box;
+  padding: 10rpx;
+  border-radius: 15px;
+  border: 1px solid #b08f80;
+}
+.commentContainter > image{
+  width: 40rpx
+}
+.selectImg image{
+  width: 200rpx;
+  margin: 10rpx;
+}
+.selectImg .imgBlock{
+  display: inline-block!important;
+  position: relative;
+}
+.delect image{
+   width: 40rpx;
+   height: 40rpx;
+}
+.selectImg .delect{
+     position: absolute;
+     top: -10rpx;
+     right: -10rpx;
+}
+.text{
+  display: inline-block!important;
+  width: 560rpx;
+  box-sizing: border-box;
+  padding-left: 20rpx;
+  font-size: 28rpx;
+}
+.commentSubmit{
+  display: inline-block;
+ 
+}
+.commentSubmit button{
+  display: inline-block;
+  line-height: 32rpx;
+  border: none;
+  font-size: 28rpx;
+ box-sizing: border-box;
+ padding: 0 10rpx!important;
+}
+.hiddenInput{
+   display: none 
+}
+button{
+  background: transparent;
+}
+button::after{
+border: none;
+background: transparent;
+}
+input{
+outline:none;
+border:none;
+list-style: none;
+}
+.coommentList{
+   background: #d9d9d9;
+   box-sizing:border-box;
+   padding-top:10rpx;
+
+}
+.headerImg{
+   flex: 1;
+   box-sizing:border-box;
+   /* padding: 10rpx; */
+   text-align: center;
+}
+.headerImg image{
+   width: 80rpx;
+   height:80rpx;
+   border-radius: 100rpx
+}
+.nickname{
+  font-size: 14px;
+}
+.commentText,.thumb text{
+  font-size: 12px;
+  line-height: 12px;
+  color: #333;
+}
+.content{
+  flex: 6;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+.thumb{
+  flex: 1;
+}
+.row{
+  width: 100%;
+   display: flex;
+}
+.thumb image{
+  width: 35rpx;
+  height: 35rpx;
+  vertical-align: middle;
+
+}
+.commentImg image{
+  width: 40%;
+  margin:10rpx;
+}
+.coommentList .row{
+  box-sizing: border-box;
+  padding: 20rpx 10rpx;
+}
+.coommentList .row{
+  /* border-bottom: 1px solid #d9d9d9; */
+  margin-bottom: 10rpx;
+  background: #fff;
+}

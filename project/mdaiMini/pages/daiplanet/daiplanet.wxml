@@ -1,0 +1,69 @@
+<!--daiplanet.wxml-->
+
+<view class="daiIntroduce">
+     <image src="https://events.daiplanet.com/daiplanet/images/planet2.gif" class="planet2" mode="widthFix"/>  
+     <image  src="https://events.daiplanet.com/daiplanet/images/plante.jpg" class="planteImg" mode="widthFix"/>
+     
+</view>
+<!-- 上传评论 -->
+
+<view class='comment'>
+    <view class='commentContainter'>
+    <!-- 上传图片显示区 -->
+    <view class='selectImg' >
+        <view wx:for="{{selectImgs}}" wx:for-item="item" wx:key="{{}}" class='imgBlock'>
+           <image v-model='selectImgs' src='{{item}}' mode="widthFix" bindtap='previewImage' data-currentitem="{{selectImgs}}"></image>
+            
+            <view id="{{currentId}}" data-index="{{index}}" class='delect' bindtap='delect'><image src='../../static/icon/delect.png' mode='aspectFit'></image></view>
+        </view>
+        
+     </view>
+     <!-- 点击上传 --> 
+      <image src="../../static/image/uploadImg.jpg" mode="widthFix" bindtap='chooseImage' />
+  
+      
+      <!-- <view class='commentText'> -->
+            <input placeholder="请输入文字评论..." name="comment" value="{{commenttext}}" class='text' v-model='commenttext' bindinput='commentText' auto-focus/>
+      <!-- </view> -->
+ 
+     <input type='hidden' name="openId"  value='{{openId}}' id="openid" class='hiddenInput' auto-focus/>
+     <input type="hidden" name="type" value="" class='hiddenInput' auto-focus/>
+
+      <view class='commentSubmit' bindtap='uploadComment'>
+        <button>发布</button>
+      </view>
+    
+     </view> 
+
+
+</view>
+
+
+
+<!-- 加载热门评论 -->
+<view class='coommentList'>
+
+<view class='row' wx:for="{{hotComment}}" wx:for-item='comment'>
+      <view class='headerImg'>
+          <image class='cilcle' src='{{comment.owner.headimgurl}}'></image> 
+    </view>
+  <view class='content'>
+        <view><text class='nickname'>{{comment.owner.nickname_true}}</text> </view> 
+        <view><text class='commentText'>{{comment.content}}</text></view> 
+         <view  class='commentImg' wx:if='{{comment.images}}'>
+            <image data-index='{{comment.images}}' data-currentitem="{{images.url}}" bindtap='commentpre' wx:for='{{comment.images}}' wx:for-item='images' src='{{images.url}}' mode="widthFix"></image>
+        </view> 
+  </view>
+  <view class='tool-item thumb'>
+   
+    <image wx:if='{{comment.if_zan==2}}' data-class='unactive' data-id='{{comment.id}}' src="../../static/icon/wx_app_like.png" bindtap='thumb'/>
+    <image wx:if='{{comment.if_zan==1}}' data-class='active' data-id='{{comment.id}}' src="../../static/icon/wx_app_liked.png" bindtap='thumb'/>
+    <text> {{comment.zan}}</text>
+
+  </view>
+
+</view>
+
+  
+
+</view>

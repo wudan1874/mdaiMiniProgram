@@ -1,0 +1,18 @@
+<view class='activityList'>
+ 
+<view wx:for="{{activityList}}" wx:for-item="item" wx:key="{{index}}">
+ 
+       <navigator  url="viewlink?url={{item.url}}"  hover-class="other-navigator-hover" > 
+            <view class="tag tag-blue" wx:if="{{item.status}}=='1'">正在进行</view>
+             <view class="tag tag-blue" wx:else>已结束</view>
+              <view class='activeImg'>
+                  <image src='{{item.img}}' mode='widthFix'></image>
+              </view>
+              <view>
+                <text class='acvtivityText'>{{item.description}}</text>
+                <text class='introduce'>{{item.title}}</text>
+              </view>
+       </navigator>   
+
+</view>
+</view>

@@ -1,0 +1,20 @@
+.museum{
+   padding-top: 0!important;
+}
+.museum{
+ width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.museum >navigator{
+  display: block;
+  float: left;
+  margin: 10px 0;
+  width: 100%;
+}
+.museum >navigator image{
+
+  width: 100%;
+  border-radius: 5%;
+  box-shadow: #666 10px 10px 10px;
+}

@@ -1,0 +1,8 @@
+ <view class="container museum">
+
+    <navigator wx:for="{{megaList}}" wx:for-item="megaLists" url="../megaPage/megaPage?id={{megaLists.id}}" wx:key="index" hover-class="none">
+ 
+       <image src="{{megaLists.mega_blog_image.file}}" /> 
+   </navigator> 
+
+</view> 

@@ -1,0 +1,21 @@
+<view class="container mega">
+
+    <view class="megabanner" >
+       <image src="{{megaContent.mega_blog_image.file}}" />
+
+    </view>
+    <view class="megaCenter">  
+ 
+      <view  wx:for="{{megaContent.blog_pages}}"  wx:for-item="blogimage" wx:key="{{blogimage.id}}" >
+
+       <navigator url="../blogPage/blogPage?slug={{blogimage.slug}}"  hover-class="other-navigator-hover" wx:key="{{blogimage.blog_image.id}}">
+
+           <image wx:if="{{blogimage.blog_image.file}}" src="{{blogimage.blog_image.file}}"></image>   
+         
+      </navigator>
+         
+      </view> 
+    </view>
+
+</view>
+

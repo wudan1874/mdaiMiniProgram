@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/index/index",
+    "pages/museum/museum",
+    "pages/megaPage/megaPage",
+    "pages/blogPage/blogPage",
+    "pages/Personal/personal",
+    "pages/Personal/device/device",
+    "pages/activity/activity",
+    "pages/activity/viewlink"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "呆星球",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#000"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "selectedColor": "#87c38f",
+    "color": "#333",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "发现",
+        "iconPath": "static/image/home.png",
+        "selectedIconPath": "static/image/home-actived.png"
+      },
+      {
+        "pagePath": "pages/museum/museum",
+        "text": "呆星博物馆",
+        "iconPath": "static/image/museum.png",
+        "selectedIconPath": "static/image/museum-actived.png"
+      },
+      {
+        "pagePath": "pages/activity/activity",
+        "text": "活动页",
+        "iconPath": "static/image/activity.png",
+        "selectedIconPath": "static/image/activity-actived.png"
+      },
+      {
+        "pagePath": "pages/Personal/personal",
+        "text": "个人中心",
+        "iconPath": "static/image/profile.png",
+        "selectedIconPath": "static/image/profile-actived.png"
+      }
+    ]
+  }
+}

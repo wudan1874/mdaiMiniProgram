@@ -1,0 +1,198 @@
+<view class="container">
+<!-- slide -->
+    <view class="slide">
+      <swiper vertical="{{false}}"  indicator-dots="true" autoplay="{{true}}" interval="5000" circular="true">
+        <swiper-item wx:for="{{imgurls}}" wx:for-item="img" wx:key="index">
+          <image  class="img" src="{{img}}" mode="{{aspectFill}}"/>
+        </swiper-item>
+      </swiper>
+    </view>
+
+<!-- indexmenu -->
+   <view class="board entryMenu" scroll-y="{{true}}">
+        <view class="board-item">
+
+          <navigator url="../museum/museum" hover-class="other-navigator-hover" wx:key="index" open-type="switchTab">
+            <view class="title"  >
+              <text>呆文化</text>
+              <image src="../../../static/image/arrowright.png" mode="aspectFill"/>
+            </view>
+          </navigator>
+
+          <scroll-view class="content" scroll-x="{{true}}">
+            <view class="inner" >
+              <navigator wx:for="{{entryMenu}}" url="../megaPage/megaPage?id={{entryMenus.id}}" wx:for-item="entryMenus" hover-class="other-navigator-hover" wx:key="{{entryMenus.id}}">
+                <view class="entryMenus-item">
+                  <image src="{{entryMenus.mega_index_image.file}}" mode="aspectFill"/>
+                  <text>{{entryMenus.title}}</text>
+
+                </view>
+              </navigator>
+            </view>
+          </scroll-view>
+        </view>
+    </view>
+<!-- <navigator url=" https://m.daiplanet.com/" hover-class="other-navigator-hover" >111111 </navigator> -->
+
+  <!-- 呆星起源 -->
+  <view class="body-view introduce">    
+   <view class='sectionHeader'>
+     <view class='title'>呆星起源</view>
+   </view>
+   <view>
+             <text>
+        呆星的原型是J1407b。这颗行星非常小，巨大的质量使其拥有37个星环，是目前已知的拥有最大星环系统的行星。我们的这颗呆星，中心就是这样一颗小小的呆。呆是一种精神，也是一种文化。呆即是呆，呆而非呆，象征着一种未满，才能创造出无限的可能性。同时，呆亦是起源的力量，代表着放飞思想的力量，自由心境的向往、大智若愚的姿态。在我们人生的          这场修行之中，一切都来源于一滴禅墨的流转变迁。</text> 
+        </view>
+  </view>
+  <!--呆文化创始人-->
+  <view class="body-view introduce">
+   
+
+   <view class='sectionHeader'>
+   
+     <view class='title'>呆星主理官介绍</view>
+   </view>
+    
+  
+    <view class='innerCon'>
+        <image src='https://m.daiplanet.com/static/blog/images/index/founder.png' mode='widthFix'></image> 
+     
+           <text class='innerh3'>
+           呆星主理官
+            </text>
+           <text class='innerh4'> 水立方总建筑师  CCDI董事长 呆文化创始人 阿呆（赵晓钧先生）</text>
+      
+          <text>
+            在其企业家及建筑师身份之余，闲来喜将“呆漫呆字”涂抹三两笔，坐坐呆禅随遇而安，历事炼心，通达自在，久而便自成一派，此为呆文化之初生.             </text>
+          <text>
+        所谓呆，原非单纯的呆。仅取一瓢解：呆是一种境界，安住现在；是一种修身，不沉过往不醉将来；亦是一种轻松的萌态，与他物无关，修得万般自在。在此基础之上，呆在多种维度上呈现形式。</text> 
+    </view>
+       
+       
+  </view>
+
+
+  <view class="body-view introduce">
+   
+       <!--呆体-->
+   <view class='sectionHeader'>
+   
+     <view class='title'>呆星博物馆</view>
+   </view>
+    <view class='innerCon'>
+        <image src='https://m.daiplanet.com/static/blog/images/index/appear_06.jpg' mode='widthFix'></image> 
+        <navigator  url="../megaPage/megaPage?id=8" hover-class="other-navigator-hover" wx:key="">
+           <text class='innerh3'>
+                呆之初生 — 点墨呆体馆
+            </text>
+      
+          <text>在呆体逐渐完满的过程中，亦成为呆星球一切的伊始，像是呆星球的地壳层。人生感悟、摘录名言、周遭所生，皆成为呆文化初期的内核载体与表现形式。</text>
+           <view class='readmore'>
+           Read More >>
+          </view>
+          
+          </navigator>
+          
+    </view>
+       <!--呆画-->
+    
+    <view class='innerCon'>
+        <image src='https://m.daiplanet.com/static/blog/images/index/paint_08.jpg' mode='widthFix'></image> 
+        <navigator  url="../megaPage/megaPage?id=7" hover-class="other-navigator-hover" wx:key="">
+           <text class='innerh3'>
+                呆之艺理 —— 呆画万象馆
+            </text>
+          <text>与呆体几乎同一时间创作的内容亦包含书画作品的创作，呆画，可以认为呆画是呆星球的海洋，它可以是任何形态，却在任何形态中依然保留着原本的神韵。柔中带刚，滋养呆星万象。具体表现形式以身处这世界的所见所观为创作点。以其中所整理出的莲韵为例，在表现莲花的神态间，蕴含内里的清涟不妖，令观者得到见仁见智的理解与感悟。
+           </text>
+          <view class='readmore'>
+           Read More >>
+          </view>
+                                </navigator>
+          
+    </view>
+
+   <!--呆漫画-->
+    
+    <view class='innerCon'>
+        <image src='https://m.daiplanet.com/static/blog/images/index/cartoon_10.jpg' mode='widthFix'></image> 
+        <navigator  url="../megaPage/megaPage?id=6" hover-class="other-navigator-hover" wx:key="">
+           <text class='innerh3'>
+                呆之诙谐 —— 呆漫百态馆
+            </text>
+          <text>与呆体呆画相仿的是，同样以人生感悟为基础的呆漫看来却诙谐了许多，就像是被呆字和呆画哺育着的湖泊，在简单纯粹的勾勒中，折射出人生百态的哲理箴言。在这一时刻，阿呆的漫画形象便由此问世，以阿呆为叙述者的角度，通过简洁的四格漫画形式为读者讲述一系列平易近人又发人深省的一幅思考。
+           </text>
+
+          <view class='readmore'>
+           Read More >>
+          </view>
+          </navigator>
+          
+    </view>
+
+
+   <!--呆you-->
+    
+    <view class='innerCon'>
+        <image src='https://m.daiplanet.com/static/blog/images/index/travel_12.jpg' mode='widthFix'></image> 
+        <navigator  url="../megaPage/megaPage?id=5" hover-class="other-navigator-hover" wx:key="">
+           <text class='innerh3'>
+               呆之游走—— 呆游尘间馆
+            </text>
+          <text>世界之大，一次出走所不能全览。呆游线就像是环绕呆星的神秘星环，总能给还保有好奇心的我们下一次出发的理由。正因如此，主张呆住生活的呆文化体系之中，包含了各具特色并且覆盖全年龄段的主题游线板块，从童年直至暮年，行在路上方能拓展人生的广度。
+           </text>
+
+          <view class='readmore'>
+           Read More >>
+          </view>
+          </navigator>
+          
+    </view>
+    <!--呆品-->
+    
+    <view class='innerCon'>
+        <image src='https://m.daiplanet.com/static/blog/images/index/goods_14.jpg' mode='widthFix'></image> 
+        <navigator  url="../megaPage/megaPage?id=4" hover-class="other-navigator-hover" wx:key="">
+           <text class='innerh3'>
+               呆之化物 —— 呆品伴生馆
+            </text>
+          <text>匆碌的世界中时间太快，感悟太少，所谓闲暇亦被切成一片一片碎裂开来。所幸是这呆星球的大气层，在不知中陪伴，在不觉里温暖。呆文化具现成围绕生活的精致小物，在瞥见的瞬间还生活片刻的宁静。
+                                
+           </text>
+
+          <view class='readmore'>
+           Read More >>
+          </view>
+          </navigator>
+          
+    </view>
+
+ <!--呆遇-->
+    
+    <view class='innerCon'>
+        <image src='https://m.daiplanet.com/static/blog/images/index/space.jpg' mode='widthFix'></image> 
+        <navigator  url="../megaPage/megaPage?id=3" hover-class="other-navigator-hover" wx:key="">
+           <text class='innerh3'>
+               呆之力场 —— 呆遇空间馆
+            </text>
+          <text>就像呆星遇见其星环系统中的一颗颗卫星，是一场与距离远近无关、与时间长短无关的遇见。呆文化邂逅落地空间，深觉空间的“灵魂”便是静思本我的闲适安放，将呆之精神依托于民宿酒店空间传播的构想，同时又以空间为现实载体，提供在视觉感官之上自我升华的场所。
+                                
+           </text>
+
+          <view class='readmore'>
+           Read More >>
+          </view>
+          </navigator> 
+    </view>
+  </view>
+
+  
+
+
+     
+</view>
+ 
+
+
+
+
+       

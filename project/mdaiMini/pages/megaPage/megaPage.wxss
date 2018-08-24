@@ -1,0 +1,26 @@
+  .mega{
+    padding: 0!important;
+  }
+    .megabanner,.megaCenter {
+       width: 100%!important; 
+    }
+  .megabanner image{
+      width: 100%!important;  
+  }
+  .megaCenter{
+     box-sizing: border-box;
+     padding: 35rpx; 
+     /* padding-top: 35rpx; */
+  }
+  .megaCenter image{
+      border-radius: 4%; 
+     width: 100%; 
+    z-index: 999;
+    margin: 10rpx 0; 
+  }
+  /* .megaCenter a{
+    display: block;
+    width: 300px;
+    height: 200px;
+    background: pink;
+  } */
